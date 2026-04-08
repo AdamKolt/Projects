@@ -865,11 +865,11 @@ a { text-decoration: none; color: inherit; }
 .hero-inner {
   max-width: 860px;
   margin: 0 auto;
-  padding: 56px 48px 48px;
+  padding: 56px 48px 0;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 40px;
-  align-items: center;
+  align-items: flex-end;
   background: var(--white);
 }
 
@@ -888,12 +888,13 @@ a { text-decoration: none; color: inherit; }
   color: #555;
   line-height: 1.6;
   max-width: 380px;
+  padding-bottom: 48px;
 }
 
 .hero-photo {
-  width: 220px;
-  height: 280px;
-  border-radius: 6px;
+  width: 260px;
+  height: 340px;
+  border-radius: 6px 6px 0 0;
   overflow: hidden;
   flex-shrink: 0;
 }
