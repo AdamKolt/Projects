@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .r-wrap { max-width: 820px; margin: 32px auto; background: #fff; box-shadow: 0 2px 24px rgba(0,0,0,.10); border-radius: 8px; overflow: hidden; }
+    .r-wrap { max-width: 904px; margin: 32px auto; background: #fff; box-shadow: 0 2px 24px rgba(0,0,0,.10); border-radius: 8px; overflow: hidden; }
 
     .r-header { background: #fff; color: #1B2A4A; padding: 28px 36px 0; }
     .r-header h1 { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; }
@@ -15,11 +15,11 @@
     .r-contact { display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 12px; color: #555; }
     .r-contact a { color: #555; text-decoration: none; }
 
-    .r-body { padding: 24px 36px 32px; }
+    .r-body { padding: 12px 36px 32px; }
 
     .r-section-label { font-size: 10px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: #1B2A4A; border-bottom: 2px solid #FBC233; padding-bottom: 4px; margin-bottom: 12px; margin-top: 18px; }
 
-    .r-top { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 4px; }
+    .r-top { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 4px; }
     .r-top p { font-size: 12.5px; line-height: 1.65; color: #333; }
 
     .r-skills { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 4px; }
@@ -86,7 +86,7 @@
       <div class="r-wrap">
 
         <!-- HEADER -->
-        <div class="r-header" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;">
+        <div class="r-header" style="display:grid;grid-template-columns:1fr 1fr;column-gap:24px;row-gap:12px;align-items:center;">
           <div>
             <h1>Adam R. Kolt <sup style="font-size:14px;font-family:'DM Sans',sans-serif;font-weight:400;">MBA</sup></h1>
             <div class="r-title">Senior Business Analyst &amp; Product Owner</div>
@@ -96,24 +96,29 @@
             <span>Orange, CA &nbsp;·&nbsp; US Citizen &nbsp;·&nbsp; Open to Travel / Relocate</span>
             <span><a href="https://linkedin.com/in/AdamKolt" target="_blank">linkedin.com/in/AdamKolt</a> &nbsp;·&nbsp; <a href="https://adamkolt.github.io/Portfolio" target="_blank">adamkolt.github.io/Portfolio</a></span>
           </div>
-          <div style="grid-column:1/-1;border-bottom:2px solid #FBC233;margin:3px 0 0;"></div>
+          <div style="grid-column:1/-1;border-bottom:2px solid #FBC233;margin:0;"></div>
         </div>
 
         <div class="r-body">
 
           <!-- SUMMARY + TRACK RECORD -->
           <div class="r-top">
-            <div>
-              <div class="r-section-label" style="margin-top:0;">Summary</div>
-              <p>Senior Business Analyst and Product Owner adept in driving high-stakes digital transformation, AI-driven innovation, and revenue growth across telecom, government, and technology sectors. Expert in translating complex business needs into actionable user stories, MVP definitions, and outcome-based roadmaps with structured requirements, process modeling, and data-driven insights.</p>
+            <div class="callout gold">
+              <div class="callout-bar"></div>
+              <div class="callout-body">
+                <div class="r-section-label" style="margin-top:0;border-bottom:none;">Summary</div>
+                <p>Senior Business Analyst and Product Owner adept in driving high-stakes digital transformation, AI-driven innovation, and revenue growth across telecom, government, and technology sectors. Expert in translating complex business needs into actionable user stories, MVP definitions, and outcome-based roadmaps with structured requirements, process modeling, and data-driven insights.</p>
+              </div>
             </div>
-            <div>
-              <div class="r-section-label" style="margin-top:0;">Track Record</div>
-              <p>Scaled a national platform <strong>10x ($5.8M → $57.8M)</strong> leading to acquisition. Architected first-to-market data monetization products while navigating strict privacy regulations. Launched a highly successful B2B Telecom self-service App <strong>reducing CAC by 20%</strong>.</p>
+            <div class="callout navy">
+              <div class="callout-bar"></div>
+              <div class="callout-body">
+                <div class="r-section-label" style="margin-top:0;border-bottom:none;">Track Record</div>
+                <p>Scaled a national platform <strong>10x ($5.8M → $57.8M)</strong> leading to acquisition. Architected first-to-market data monetization products while navigating strict privacy regulations. Launched a highly successful B2B Telecom self-service App <strong>reducing CAC by 20%</strong>.</p>
+              </div>
             </div>
           </div>
 
-          <hr class="r-divider">
 
           <!-- CORE SKILLS -->
           <div class="r-section-label" style="margin-top:0;">Core Skills</div>
@@ -126,6 +131,7 @@
                 <li>Agile Delivery — Scrum, Kanban, Sprint Planning</li>
                 <li>SDLC, UAT &amp; Release Management</li>
                 <li>Compliance by Design &amp; Regulatory Alignment</li>
+                <li>Customer Journey Mapping</li>
               </ul>
             </div>
             <div class="r-skill-col">
@@ -136,7 +142,6 @@
                 <li>Operational Excellence &amp; Continuous Improvement</li>
                 <li>Business Case Development, CBA &amp; ROI Modeling</li>
                 <li>Value Stream Mapping &amp; Lead-to-Cash Optimization</li>
-                <li>Customer Journey Mapping</li>
               </ul>
             </div>
             <div class="r-skill-col">
@@ -152,10 +157,9 @@
             </div>
           </div>
 
-          <hr class="r-divider">
 
           <!-- EXPERIENCE -->
-          <div class="r-section-label" style="margin-top:0;">Professional Experience</div>
+          <div class="r-section-label" style="margin-top:20px;">Professional Experience</div>
 
           <!-- Ooredoo -->
           <div class="r-job">
@@ -223,7 +227,6 @@
             </ul>
           </div>
 
-          <hr class="r-divider">
 
           <!-- EDUCATION -->
           <div class="r-section-label" style="margin-top:0;">Education &amp; Certifications</div>
