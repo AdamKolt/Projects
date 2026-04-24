@@ -871,9 +871,10 @@ a { text-decoration: none; color: inherit; }
 }
 
 .hero-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
   line-height: 1.1;
   color: var(--text);
   margin-bottom: 16px;
