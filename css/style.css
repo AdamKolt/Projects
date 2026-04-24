@@ -239,7 +239,6 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   gap: 10px;
   padding: 10px 0;
-  border-bottom: 1px solid var(--border);
   font-size: 14px;
   line-height: 1.65;
   align-items: flex-start;
@@ -484,7 +483,6 @@ a { text-decoration: none; color: inherit; }
 .right-bullet {
   display: flex; gap: 10px;
   padding: 9px 0;
-  border-bottom: 1px solid var(--border);
   font-size: 14px; line-height: 1.65;
   align-items: flex-start;
 }
