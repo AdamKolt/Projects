@@ -239,6 +239,7 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   gap: 10px;
   padding: 10px 0;
+  border-bottom: 1px solid var(--border);
   font-size: 14px;
   line-height: 1.65;
   align-items: flex-start;
@@ -483,6 +484,7 @@ a { text-decoration: none; color: inherit; }
 .right-bullet {
   display: flex; gap: 10px;
   padding: 9px 0;
+  border-bottom: 1px solid var(--border);
   font-size: 14px; line-height: 1.65;
   align-items: flex-start;
 }
@@ -623,7 +625,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ── NUMBERED SECTION HEADER ── */
-.num-section { margin: 20px 0 8px; }
+.num-section { margin: 28px 0 8px; }
 
 .num-section h3 {
   font-size: 14px;
@@ -871,10 +873,9 @@ a { text-decoration: none; color: inherit; }
 }
 
 .hero-heading {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 40px;
-  font-weight: 800;
-  letter-spacing: -0.025em;
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
   line-height: 1.1;
   color: var(--text);
   margin-bottom: 16px;
@@ -965,6 +966,21 @@ a { text-decoration: none; color: inherit; }
   font-size: 12.5px;
   color: var(--muted);
   line-height: 1.6;
+}
+
+/* Homepage cards: icon left, two-line title right, desc below */
+.cards-grid .project-card {
+  display: grid;
+  grid-template-columns: 68px 1fr;
+  column-gap: 14px;
+  align-items: center;
+}
+.cards-grid .project-card .card-icon { margin-bottom: 0; }
+.cards-grid .project-card .card-title { margin-bottom: 0; }
+.cards-grid .project-card .card-title h3 { line-height: 1.2; }
+.cards-grid .project-card .card-desc {
+  grid-column: 1 / -1;
+  margin-top: 14px;
 }
 
 /* ── ABOUT PAGE ── */
